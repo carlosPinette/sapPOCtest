@@ -1,0 +1,16 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
+  /**
+   * @namespace ui5.typescript.helloworld.controller
+   */
+  const App = Controller.extend("ui5.typescript.helloworld.controller.App", {
+    onInit: function _onInit() {
+      // apply content density mode to root view
+      this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
+    },
+    openDialog: function _openDialog() {
+      this.getOwnerComponent().openHelloDialog();
+    }
+  });
+  return App;
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jb250cm9sbGVyL0FwcC5jb250cm9sbGVyLnRzIl0sIm5hbWVzIjpbIkFwcCIsIkNvbnRyb2xsZXIiLCJvbkluaXQiLCJnZXRWaWV3IiwiYWRkU3R5bGVDbGFzcyIsImdldE93bmVyQ29tcG9uZW50IiwiZ2V0Q29udGVudERlbnNpdHlDbGFzcyIsIm9wZW5EaWFsb2ciLCJvcGVuSGVsbG9EaWFsb2ciXSwibWFwcGluZ3MiOiI7QUFHQTtBQUNBO0FBQ0E7UUFDcUJBLEcsR0FBWUMsVTtBQUV6QkMsSUFBQUEsTSxxQkFBZ0I7QUFDdEI7QUFDQSxXQUFLQyxPQUFMLEdBQWVDLGFBQWYsQ0FBOEIsS0FBS0MsaUJBQUwsRUFBRCxDQUEyQ0Msc0JBQTNDLEVBQTdCO0FBQ0EsSztBQUVNQyxJQUFBQSxVLHlCQUFtQjtBQUN4QixXQUFLRixpQkFBTCxFQUFELENBQTJDRyxlQUEzQztBQUNBOztTQVRtQlIsRyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBBcHBDb21wb25lbnQgZnJvbSBcIi4uL0NvbXBvbmVudFwiO1xyXG5pbXBvcnQgQ29udHJvbGxlciBmcm9tIFwic2FwL3VpL2NvcmUvbXZjL0NvbnRyb2xsZXJcIjtcclxuXHJcbi8qKlxyXG4gKiBAbmFtZXNwYWNlIHVpNS50eXBlc2NyaXB0LmhlbGxvd29ybGQuY29udHJvbGxlclxyXG4gKi9cclxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgQXBwIGV4dGVuZHMgQ29udHJvbGxlciB7XHJcblxyXG5cdHB1YmxpYyBvbkluaXQoKSA6IHZvaWQge1xyXG5cdFx0Ly8gYXBwbHkgY29udGVudCBkZW5zaXR5IG1vZGUgdG8gcm9vdCB2aWV3XHJcblx0XHR0aGlzLmdldFZpZXcoKS5hZGRTdHlsZUNsYXNzKCh0aGlzLmdldE93bmVyQ29tcG9uZW50KCkgYXMgQXBwQ29tcG9uZW50KS5nZXRDb250ZW50RGVuc2l0eUNsYXNzKCkpO1xyXG5cdH1cclxuXHJcblx0cHVibGljIG9wZW5EaWFsb2coKTogdm9pZCB7XHJcblx0XHQodGhpcy5nZXRPd25lckNvbXBvbmVudCgpIGFzIEFwcENvbXBvbmVudCkub3BlbkhlbGxvRGlhbG9nKCk7XHJcblx0fVxyXG5cclxufSJdfQ==

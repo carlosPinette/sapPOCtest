@@ -1,0 +1,23 @@
+<mvc:View 
+  controllerName="ui5.typescript.helloworld.controller.HelloPanel"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+  <Panel
+    headerText="Panel title"
+    width="auto"  
+  >
+    <content>
+      <Button
+        id="helloDialogButton"
+        icon="sap-icon://world"
+        text="Open Dialog"
+        press="openDialog"
+      />
+      <Button
+        text="Press button"
+        press="sayHello"
+      />
+    </content>
+  </Panel>
+    
+</mvc:View>

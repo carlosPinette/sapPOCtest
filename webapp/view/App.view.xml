@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName="ui5.typescript.helloworld.controller.App"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+
+	<App id="app">
+		<pages>
+			<Page
+				title="Typescript UI5 POC App"
+				id="page">
+				<headerContent>
+					<Button
+						icon="sap-icon://hello-world"
+						press="openDialog"/>
+				</headerContent>
+				<content>
+					<mvc:XMLView
+						viewName="ui5.typescript.helloworld.view.HelloPanel"
+					/>
+					<mvc:XMLView
+						viewName="ui5.typescript.helloworld.view.InvoiceList"
+					/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+
+</mvc:View>
